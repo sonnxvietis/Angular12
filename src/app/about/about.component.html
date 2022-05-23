@@ -1,0 +1,5 @@
+<ul [ngSwitch]="isLogin"> 
+      <li *ngSwitchCase="'user'">Ban la user</li>
+      <li *ngSwitchCase="'admin'">Ban la admin</li>
+      <li *ngSwitchDefault>Ban chua login</li>
+</ul>
