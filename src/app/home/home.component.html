@@ -1,18 +1,26 @@
 <table class="table">
     <thead>
-      <tr>
-        <th scope="col">Stt</th>
-        <th scope="col">Ten</th>
-        <th scope="col">Gia</th>
-        <th scope="col">Dai ha gia</th>
-      </tr>
+        <tr>
+            <th scope="col">Stt</th>
+            <th scope="col">Ten</th>
+            <th scope="col">Gia</th>
+            <th scope="col">Dai ha gia</th>
+        </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let trai of traicay, let i= index">
-        <th scope="row">{{i+1}}</th>
-        <td>{{trai.ten | uppercase }}</td>
-        <td>{{trai.gia}}</td>
-        <td>{{trai.dongGia | onsale | uppercase}}</td>
-      </tr>
+        <tr *ngFor="let trai of traicay, let i= index">
+            <th scope="row">{{i+1}}</th>
+            <td>{{trai.ten | uppercase }}</td>
+            <td>{{trai.gia}}</td>
+            <td>{{trai.dongGia | onsale | uppercase}}</td>
+        </tr>
     </tbody>
-  </table>
+</table>
+
+<select name="city" id="city" (change)="changeCity($event)">
+    <option *ngFor="let city of cities" value="{{ city.city }}">{{city.city}}</option>
+</select>
+
+<select name="district" id="district">
+    <option *ngFor="let district of districts" value="{{district}}">{{district}}</option>
+</select>
