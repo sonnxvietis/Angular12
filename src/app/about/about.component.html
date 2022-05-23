@@ -1,4 +1,4 @@
-<ul [ngSwitch]="isLogin"> 
+<ul [ngSwitch]="isLogin" [appHightlight]="myColor"> 
       <li *ngSwitchCase="'user'">Ban la user</li>
       <li *ngSwitchCase="'admin'">Ban la admin</li>
       <li *ngSwitchDefault>Ban chua login</li>

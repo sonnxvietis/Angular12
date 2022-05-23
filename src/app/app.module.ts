@@ -8,6 +8,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { OnsalePipe } from './onsale.pipe';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AboutComponent } from './about/about.component';
+import { HightlightDirective } from './Directives/hightlight.directive';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { AboutComponent } from './about/about.component';
     HomeComponent,
     OnsalePipe,
     PageNotFoundComponent,
-    AboutComponent
+    AboutComponent,
+    HightlightDirective
   ],
   imports: [
     BrowserModule,
